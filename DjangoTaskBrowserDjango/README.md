@@ -11,4 +11,4 @@ $ python tasks/manage.py runserver
 
 # Browser app
 
-1. ```browser``` folder contains the main Task Browswer app
+1. ```browser``` folder contains the main Task Browser app

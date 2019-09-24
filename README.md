@@ -47,3 +47,7 @@ npm run dev
 ## Github Link 
 
 https://github.com/MervinPraison/TaskBrowser
+
+## Author
+
+Mervin Praison

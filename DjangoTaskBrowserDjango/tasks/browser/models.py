@@ -10,6 +10,9 @@ class Task(models.Model):
     parent = models.ForeignKey("self",blank=True, null=True ,related_name='children', on_delete=models.DO_NOTHING, related_query_name='child')
     def __str__(self):
         return self.name
+    
+    # status(self) to check the status of the Task
+    
     def status(self):
         if self.start_date >= timezone.now():
             return "Scheduled"
@@ -19,11 +22,17 @@ class Task(models.Model):
             return "Multi-Runs"
         else:
             return "Idle"
+    
+    # isparent(self) to check if the current task has a parent
+    
     def isparent(self):
         if self.parent:
             return self.parent
         else:
             return "NULL"
+    
+    # duration(self) to calculate the duration of the task
+    
     def duration(self):
         if self.end_date > self.start_date:
             duration = self.end_date - self.start_date
@@ -33,6 +42,9 @@ class Task(models.Model):
             return minutes
         else:
             return 'Error'
+    
+    # was_recently_started(self) to check if the task was recently started
+    
     def was_recently_started(self):
         now = timezone.now()
         return now - datetime.timedelta(days=1) <= self.start_date <= now

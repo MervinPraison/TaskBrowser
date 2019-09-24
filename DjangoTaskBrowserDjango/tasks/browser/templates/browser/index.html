@@ -1,0 +1,40 @@
+{% load static %}
+<style>
+    div {padding: 30px;}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div>
+{% if latest_task %}
+
+<h1>Tasks Browser : Django Interface</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Parent</th>
+                <th>Duration in minutes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in latest_task %}
+                <tr>
+                    <td>{{r.task_id}}</td>
+                    <td><a href="/{{r.task_id}}/">{{r.name}}</a></td>
+                    <td>{{r.status}}</td>
+                    <td>{{r.start_date}}</td>
+                    <td>{{r.end_date}}</td>
+                    <td>{{r.parent}}</td>
+                    <td>{{r.duration}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% else %}
+    <p>No tasks are available.</p>
+{% endif %}
+</div>

@@ -28,6 +28,9 @@ python tasks/manage.py runserver
 ```
 
 **Visit:** http://localhost:8000/
+**API:** http://localhost:8000/api/
+**API for single task:** http://localhost:8000/api/1/
+**Django REST Framework:**  http://localhost:8000/interface/
 
 ### Installing React App
 

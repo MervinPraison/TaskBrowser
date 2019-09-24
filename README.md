@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-## Task Browser App
+## Task Browser App Demo
 
 1. Created Django App https://praison.com/tasksbrowser/
 2. Created Admin https://praison.com/tasksbrowser/administrator/ 

@@ -8,3 +8,7 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 $ python tasks/manage.py runserver
 ```
+
+# Browser app
+
+1. /browser contains the main Task Browswer app

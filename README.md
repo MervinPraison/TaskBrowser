@@ -3,7 +3,7 @@
 ## Basic
 
 This is a simple Task browser app. 
-The Task browser consists of fields such as Task ID, Task Name, Start Date, End Date, Parent
+The Task browser consists of fields such as Task ID, Task Name, Start Date, End Date, Parent. 
 Duration and status of the task was created during runtime
 
 ## Construction
@@ -16,6 +16,8 @@ Duration and status of the task was created during runtime
 
 ## Installation
 
+### Installing Django App
+
 ```sh
 git clone https://github.com/MervinPraison/TaskBrowser.git
 cd TaskBrowser/DjangoTaskBrowserDjango
@@ -24,6 +26,8 @@ source env/bin/activate
 pip install -r requirements.txt
 python tasks/manage.py runserver
 ```
+
+### Installing React App
 
 ```sh
 git clone https://github.com/MervinPraison/TaskBrowser.git

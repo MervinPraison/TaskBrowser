@@ -1,4 +1,20 @@
-# Task Browser using Django 
+# Task Browser using Django
+
+## Basic
+
+This is a simple Task browser app. 
+The Task browser consists of fields such as Task ID, Task Name, Start Date, End Date, Parent
+Duration and status of the task was created during runtime
+
+## Construction
+
+1. Created Django app 
+2. Sqlite database was used to save data
+3. Django admin panel was created to manage data
+4. REST API was created so that it could be used to create the React front-end
+5. React, Next.js and Bootstrap are used to create the front-end
+
+## Installation
 
 ```sh
 git clone https://github.com/MervinPraison/TaskBrowser.git

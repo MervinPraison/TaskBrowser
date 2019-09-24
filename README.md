@@ -27,6 +27,8 @@ pip install -r requirements.txt
 python tasks/manage.py runserver
 ```
 
+**Visit:** http://localhost:8000/
+
 ### Installing React App
 
 ```sh
@@ -35,6 +37,8 @@ cd TaskBrowser/DjangoTaskBrowserReact
 npm install
 npm run dev
 ```
+
+**Visit:** http://localhost:8080/
 
 ## Task Browser App Demo
 

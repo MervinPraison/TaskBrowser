@@ -4,7 +4,7 @@
 
 This is a simple Task browser app. 
 The Task browser consists of fields such as Task ID, Task Name, Start Date, End Date, Parent. 
-Duration and status of the task was created during runtime
+Duration and status of the task will be created during runtime
 
 ## Construction
 

@@ -26,8 +26,8 @@ const Index = props => (
           <td> {task.name} </td>
           <td> {task.task_id} </td>
           <td> {task.status} </td>
-          <td> {task.start_date} </td>
-          <td> {task.end_date} </td>
+          <td> {task.Start_Timestamp} </td>
+          <td> {task.End_Timestamp} </td>
           <td> {task.parent} </td>
           <td> {task.duration} </td>
         </tr>

@@ -9,7 +9,7 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 
 def index(request):
-    latest_task = Task.objects.order_by('task_id')[:20]
+    latest_task = Task.objects.order_by('name')[:100]
     template = loader.get_template('browser/index.html')
     context = {
         'latest_task': latest_task,

@@ -21,13 +21,17 @@
         </thead>
         <tbody>
             {% for r in latest_task %}
+                {% if r.isparent == "NULL" %}
+                <tr class="table-info">
+                {% else %}
                 <tr>
+                {% endif %}
                     <td>{{r.task_id}}</td>
                     <td><a href="/{{r.task_id}}/">{{r.name}}</a></td>
                     <td>{{r.status}}</td>
-                    <td>{{r.start_date}}</td>
-                    <td>{{r.end_date}}</td>
-                    <td>{{r.parent}}</td>
+                    <td>{{r.Start_Timestamp}}</td>
+                    <td>{{r.End_Timestamp}}</td>
+                    <td>{{r.isparent}}</td>
                     <td>{{r.duration}}</td>
                 </tr>
             {% endfor %}

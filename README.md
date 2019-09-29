@@ -48,7 +48,7 @@ npm run dev
 1. Django App https://praison.com/tasksbrowser/
 2. Admin Panel to manage data https://praison.com/tasksbrowser/administrator/ 
 3. Django API https://praison.com/tasksbrowser/api/
-4. Django API for single task https://praison.com/tasksbrowser/api/1/
+4. Django API for single task https://praison.com/tasksbrowser/api/9/
 5. Django REST Framework https://praison.com/tasksbrowser/interface/
 6. Front-end with React, Next JS and Bootstrap using API https://praison.com/tasksbrowserreact/
 

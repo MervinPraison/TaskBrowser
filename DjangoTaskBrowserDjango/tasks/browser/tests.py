@@ -24,5 +24,4 @@ class QuestionModelTests(TestCase):
         start_date = timezone.now() + datetime.timedelta(days=30)
         end_date = timezone.now()
         checking_task = Task(start_date=start_date, end_date=end_date)
-        print(checking_task.taskduration(checking_task))
         self.assertIs(checking_task.taskduration(checking_task), "Error")

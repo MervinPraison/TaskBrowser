@@ -28,6 +28,7 @@ python tasks/manage.py runserver
 ```
 
 * **Visit:** http://localhost:8000/
+* **Admin Panel to manage data:** http://localhost:8000/tasksbrowser/administrator/
 * **API:** http://localhost:8000/api/
 * **API for single task:** http://localhost:8000/api/9/
 * **Django REST Framework:**  http://localhost:8000/interface/
